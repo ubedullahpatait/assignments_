@@ -10,13 +10,13 @@ namespace BMICalculator
     {
         
        
-            public float CalculateBMI(float height, float Weight)
+            public double CalculateBMI(double height, double Weight)
             {
-                float BMI = Weight / height;
+                double BMI = Weight / height;
                 return BMI;
             }
 
-            public string CheckStatus(float bMI)
+            public string Calculate(double bMI)
             {
                 if (bMI < 18.5)
                     return "underweight";
