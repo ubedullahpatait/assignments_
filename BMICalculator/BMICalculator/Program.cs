@@ -11,13 +11,9 @@ namespace BMICalculator
         static void Main(string[] args)
         {
             BMICalculator bMICalculator = new BMICalculator();
-            Console.WriteLine("Enter height in meters");
-            float height = float.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the weight in KG");
-            float weight = float.Parse(Console.ReadLine());
-            float BMI = bMICalculator.CalculateBMI(height, weight);
-            string status = bMICalculator.CheckStatus(BMI);
-            Console.WriteLine(status);
+            double BMI = bMICalculator.CalculateBMI(5.1, 60);
+            string calculateResult = bMICalculator.Calculate(BMI);
+            Console.WriteLine(calculateResult);
 
         }
     }
