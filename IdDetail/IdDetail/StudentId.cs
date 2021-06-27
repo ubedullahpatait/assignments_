@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IdDetail 
 {
-    class StudentId : Detail
+   public class StudentId : CardDetail
     {
         String _usn, _course, _section;
         public StudentId(String name, String address, string dob,long phoneNumber ,String usn, String course , String section):base(name,address,dob,phoneNumber)
