@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdDetail 
+namespace IdCardDetail 
 {
-   public class StudentId : CardDetail
+   public class StudentIdCard : CardDetail
     {
         String _usn, _course, _section;
-        public StudentId(String name, String address, string dob,long phoneNumber ,String usn, String course , String section):base(name,address,dob,phoneNumber)
+        public StudentIdCard(String name, String address, string dob,long phoneNumber ,String usn, String course , String section):base(name,address,dob,phoneNumber)
         {
             this._usn = usn;
             this._course = course;
