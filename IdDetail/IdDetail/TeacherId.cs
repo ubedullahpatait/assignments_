@@ -9,7 +9,7 @@ namespace IdCardDetail
    public class TeacherIdCard:CardDetail
     {
         String  _dept, _designation, _IdNumber;
-       public TeacherId(String name, String address, String dob, long phoneNumber,String dept, String designation ,String IdNumber):base(name, address, dob, phoneNumber)
+       public TeacherIdCard(String name, String address, String dob, long phoneNumber,String dept, String designation ,String IdNumber):base(name, address, dob, phoneNumber)
         {
             this._dept = dept;
             this._designation = designation;
