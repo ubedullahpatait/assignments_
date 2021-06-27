@@ -1,2 +1,0 @@
-C:\Users\ubedullah.patait\source\repos\IdDetail\IdDetail\obj\Debug\IdDetail.csproj.AssemblyReference.cache
-C:\Users\ubedullah.patait\source\repos\IdDetail\IdDetail\obj\Debug\IdDetail.csproj.CoreCompileInputs.cache
