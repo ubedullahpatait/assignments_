@@ -8,7 +8,7 @@ namespace IdCardDetail
 {
    public class StudentIdCard : CardDetail
     {
-        String _usn, _course, _section;
+      public  String _usn, _course, _section;
         public StudentIdCard(String name, String address, string dob,long phoneNumber ,String usn, String course , String section):base(name,address,dob,phoneNumber)
         {
             this._usn = usn;
