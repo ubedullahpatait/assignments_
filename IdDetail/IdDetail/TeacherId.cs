@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IdDetail
+namespace IdCardDetail
 {
-    class TeacherId:Detail
+   public class TeacherIdCard:CardDetail
     {
-        string  _dept, _designation, _IdNumber;
+        String  _dept, _designation, _IdNumber;
        public TeacherId(String name, String address, String dob, long phoneNumber,String dept, String designation ,String IdNumber):base(name, address, dob, phoneNumber)
         {
             this._dept = dept;
