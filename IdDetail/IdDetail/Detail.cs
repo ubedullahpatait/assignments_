@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IdDetail
 {
-    class CardDetail
+   public abstract class CardDetail
     {
         private String _name, _address , _dob;
         private long _phoneNumber;
