@@ -1,0 +1,7 @@
+D:\IdCardDetail\IdCardDetail\bin\Debug\IdCardDetail.exe.config
+D:\IdCardDetail\IdCardDetail\bin\Debug\IdCardDetail.exe
+D:\IdCardDetail\IdCardDetail\bin\Debug\IdCardDetail.pdb
+D:\IdCardDetail\IdCardDetail\obj\Debug\IdCardDetail.csproj.AssemblyReference.cache
+D:\IdCardDetail\IdCardDetail\obj\Debug\IdCardDetail.csproj.CoreCompileInputs.cache
+D:\IdCardDetail\IdCardDetail\obj\Debug\IdCardDetail.exe
+D:\IdCardDetail\IdCardDetail\obj\Debug\IdCardDetail.pdb
