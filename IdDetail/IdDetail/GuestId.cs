@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IdDetail
 {
-    class GuestId:Detail
+    class GuestId:CardDetail
     {
         String _purpose;
        public  GuestId(String name, String address,String dob ,long phoneNumber,String purpose):base(name, address,dob, phoneNumber)
