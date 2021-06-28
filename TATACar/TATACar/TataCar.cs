@@ -8,7 +8,7 @@ namespace TATACar
 {
     class TataCar
     {
-        Engine _engine;
+        IEngine _engine;
         public TataCar(Engine engine)
         {
 
