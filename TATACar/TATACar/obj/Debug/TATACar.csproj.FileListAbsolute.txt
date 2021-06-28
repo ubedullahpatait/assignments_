@@ -1,0 +1,7 @@
+D:\TATACar\TATACar\bin\Debug\TATACar.exe.config
+D:\TATACar\TATACar\bin\Debug\TATACar.exe
+D:\TATACar\TATACar\bin\Debug\TATACar.pdb
+D:\TATACar\TATACar\obj\Debug\TATACar.csproj.AssemblyReference.cache
+D:\TATACar\TATACar\obj\Debug\TATACar.csproj.CoreCompileInputs.cache
+D:\TATACar\TATACar\obj\Debug\TATACar.exe
+D:\TATACar\TATACar\obj\Debug\TATACar.pdb
