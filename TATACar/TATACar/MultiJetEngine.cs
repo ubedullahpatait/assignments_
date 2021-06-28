@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TATACar
 {
-    class MultiJetEngine:Engine
+    class MultiJetEngine:IEngine
     {
         public void Start()
         {
