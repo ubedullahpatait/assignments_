@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TATACar
 {
-    class RevorTron:Engine
+    class RevorTron:IEngine
     {
         public void Start()
         {
