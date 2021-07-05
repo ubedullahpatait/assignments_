@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DynamicArray
+{
+	class DynamicNumberArray
+	{
+        int[] buffer;
+        
+        public DynamicNumberArray()
+        {
+            buffer = new int[5];
+        }
+            public DynamicNumberArray(int initialSize)
+        { 
+
+            buffer = new int[initialSize];
+        }
+
+
+
+        public int this[int index]
+        {
+            set
+            {
+                if(index >= buffer.Length)
+                {
+                    Array.Resize(ref buffer, index + 5);
+
+                }
+                buffer[index] = value;
+            }
+            get
+            {
+                return buffer[index];
+            }
+        }
+
+           
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DynamicArray
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            static void Main()
+            {
+                DynamicNumberArray _dynamic = new DynamicNumberArray();
+                _dynamic[0] = 10;
+                _dynamic[1] = 20;
+                _dynamic[2] = 30;
+                _dynamic[3] = 40;
+                _dynamic[4] = 50;
+                _dynamic[5] = 60;
+
+                int value = _dynamic[5];
+                Console.WriteLine(value);
+
+
+            }
+        }
+    }
+}
+
