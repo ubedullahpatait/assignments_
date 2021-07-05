@@ -43,17 +43,6 @@ namespace DynamicArray
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,4 +74,24 @@ namespace DynamicArray
         }
     }
 }
+
+
+
+for(int i = 0; i < numbers.Length; i++)
+		   {
+			   Console.WriteLine(numbers[i]);
+			   //newSize++;
+			   
+		   }
+		    numbers[2] = 5; 
+		    Console.WriteLine((numbers));
+		  // arr[5] = 'n';
+		   return numbers[5];
+
+
+
+
+
+
+
 
