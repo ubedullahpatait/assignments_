@@ -33,6 +33,33 @@ namespace DynamicArray
                 }
                 buffer[index] = value;
             }
+	    
+	    
+	    
+	    
+	    
+	    
+	   public static int Resize(ref int[] numbers,int newSize)
+        {
+		  // numbers = new int [newSize];
+		   for(int i = 0; i < numbers.Length; i++)
+		   {
+			   Console.WriteLine(numbers[i]);
+			   //newSize++;
+			   
+		   }
+		    numbers = new int [newSize];
+		    for(int i = 0; i < numbers.Length; i++)
+		   {
+			   Console.WriteLine(numbers[i]);
+			   //newSize++;
+			   
+		   }
+		    Console.WriteLine((numbers));
+		  // arr[5] = 'n';
+		   return numbers[5];
+        }
+    }
             get
             {
                 return buffer[index];
