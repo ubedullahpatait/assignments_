@@ -23,5 +23,18 @@ when the user click the button, the web server recieves, a request for redirecti
 to the client. The client then automatically issues a  new GET request to the web server. The web server send the another
 page to browser.
 
+ **Server.Transfer**
+ - Done by server
+- Browser Url doesn't change
+- when we need  to redirect between pages of
+  the same server
+  
+  Ex:
+  protected void Button1_Click(object sender, EventArgs e)</br>
+ {</br>
+    Server.Transfer("WebForm2.aspx");</br>
+}</br>
+
+![servertransfer](https://user-images.githubusercontent.com/67995958/131205979-30d364e2-6e85-400d-a5a0-521cd0bf2508.png)
 
 
