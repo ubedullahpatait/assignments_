@@ -45,8 +45,6 @@ In Server-Side State Management all the information is stored in the user memory
             //Response.Redirect("ViewState2.aspx");
         }
         
-        
-        
          protected void Restore_Click(object sender, EventArgs e)
         {
             if (ViewState["Name"] != null)
@@ -61,6 +59,37 @@ In Server-Side State Management all the information is stored in the user memory
         }
     }
 ```
+
+**Hidden Field :**
+A hidden field is used for storing small amounts of data on the client side. In most simple words it's just a container of some objects but their result is not rendered on our web browser. It is invisible in the browser
+
+```C#
+ <div>
+            <asp:HiddenField ID="HideValueAsp" runat="server" />
+            <asp:Button ID="btnHid" runat="server" Text="Show Hidden Value" OnClick="btnHid_Click" />
+            <h2>output</h2>
+            <h3>ASP Hidden</h3>
+            <asp:Label ID="lblASPHiddenValue" runat="server" Text="Label"></asp:Label>
+        </div>
+```        
+```C#
+public partial class HiddenField1 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {  
+            HideValueAsp.Value = "1Asp";
+        }
+
+        protected void btnHid_Click(object sender, EventArgs e)
+        { 
+            lblASPHiddenValue.Text = HideValueAsp.Value;
+        }
+    }
+```    
+    
+    
+
+
   **Cookies**
   
 - Store information temporarily
@@ -82,7 +111,6 @@ In Server-Side State Management all the information is stored in the user memory
 ```ruby
  public partial class Source : System.Web.UI.Page
     {
-        
         protected void Button1_Click(object sender, EventArgs e)
         {
             HttpCookie cookie = new HttpCookie("UserInfo");
