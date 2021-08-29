@@ -142,6 +142,11 @@ public partial class HiddenField1 : System.Web.UI.Page
 **Query Strings**<br/>
 Query strings are used for some specific purpose. These in a general case are used for holding some value from a different page and move these values to the different page. The information stored in it can be easily navigated to one page to another or to the same page as well.
 
+- It is generally used for holding values
+- Works temporarily
+- Switches info from one to another page
+- Increase performance
+- Uses real and virtual path values for URL routing
 ```c#
  public partial class Login : System.Web.UI.Page
     {
