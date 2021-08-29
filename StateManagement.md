@@ -161,6 +161,8 @@ Query strings are used for some specific purpose. These in a general case are us
         }
     }
 ```
+**Control State:**
+Control state is based on the custom control option. For expected results from CONTROL STATE we need to enable the property of view state. As I already described you can manually change those settings.
 
 **Server-side Techniques**
 
