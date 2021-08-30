@@ -46,9 +46,7 @@
 - Allows final changes to the page or its control.
 
 **OnSaveStateComplete**
-Raised after view state and control state have been saved for the page and for all controls.
-Before this event occurs, ViewState has been saved for the page and for all controls.
-Any changes to the page or controls at this point will be ignored.
+- This Event is raised after the control events are handled
 
 
 **Render Method**
