@@ -38,7 +38,6 @@
 - After the Page load event , the control event like buttons click, dropdownlist's selected index changed event are raised
 - 
 **LoadComplete**
-- 
 - Use this event for tasks that require that all other controls on the page be loaded.
 
 **OnPreRender**
