@@ -26,25 +26,19 @@
 - The "Init" event is fired first for the bottom-most control in the hierarchy, and then fired up the hierarchy until it is fired for the page itself.
 
 **InitComplete**
-- Until now the viewstate values are not yet loaded, hence you can use this event to make changes to the view state that you want to ensure are persisted after the next postback.
-- Raised by the Page object.
-- Use this event for processing tasks that require all initialization to be complete.
+- This event raised gets raised immidiately after page initialization..
 
-**OnPreLoad**
-- Raised after the page loads view state for itself and all controls, and after it processes postback data that is included with the Request instance.
-- Before the Page instance raises this event, it loads view state for itself and all controls, and then processes any postback data included with the Request instance.
-- Loads ViewState: ViewState data are loaded to controls.
-- Loads Postback data: Postback data are now handed to the page controls.
+**PreLoad**
+- Happen just before the page load event
 
 **Load**
-- The Page object calls the OnLoad method on the Page object, and then recursively does the same for each child control until the page and all controls are loaded. The - - - Load event of individual controls occurs after the Load event of the page.
+- Page Load Event ,occur before the load event of all the individual control on that webform.
 
-**Control PostBack Event(s)**
-- ASP.NET now calls any events on the page or its controls that caused the PostBack to occur.
-- Use these events to handle specific control events, such as a Button control's Click event or a TextBox control's TextChanged event.
-
+**Control Event**
+- After the Page load event , the control event like buttons click, dropdownlist's selected index changed event are raised
+- 
 **LoadComplete**
-- Raised at the end of the event-handling stage.
+- 
 - Use this event for tasks that require that all other controls on the page be loaded.
 
 **OnPreRender**
