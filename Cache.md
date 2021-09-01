@@ -29,4 +29,14 @@ This is the most important attributes; you can't afford to miss that in the Outp
 **Fragment caching**
 In some scenarios we only need to cache only a segment of a page. For example a contact us page in a main page will be the same for all the users and for that there is no need to cache the entire page.
 
+```C#
+<%@ OutputCache Duration = 10 VaryByParam = "None" %>  
+```
+
+**Validation group**<br>
+Validation groups allow you to validate data entry controls in groups. Server controls such as validation controls, Button and TextBox have ValidationGroup property that takes a string value. All the server controls having the same ValidationGroup value act as one validation group. 
+
+```C#
+<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ValidationGroup="validate" ControlToValidate="_usn" Display="Dynamic" ErrorMessage="RequiredFieldValidator" ForeColor="Red" SetFocusOnError="True"></asp:RequiredFieldValidator>
+```
 
