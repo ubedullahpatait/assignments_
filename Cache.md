@@ -1,8 +1,9 @@
 # Caching in asp.net
-   - Caching is one of the most interesting concepts and operations in ASP.NET. If you can handle it,
-    you can run any web application by applying the caching concept depending on the requirements.
-- Caching is for providing solutions or the results to the users depending on their requested request, 
-    admin needs to recreate the pages often depending on user requests…STOP!!!
+  - it is a technique of storing frequently used information in memory
+  - when the same information is needed next time , it could be directively retrieved from the memory
+  - it is important for data related transaction
+  - retrive the data directively from cache rather then calling from every time in server machine.
+  
     
 **Types of caching**
 - Page Caching
@@ -10,7 +11,9 @@
 - Data Caching
 
 **Page Caching**
-To cache an entire page's output we need to specify a directive at the top of our page, this directive is the @ OutputCache.
+- basically will be able to store the complete page information and cache machine for particular duration.
+- if within that duration any client make a request  and the data is not critically  important we avoid retrive that particular data every time  from the server
+
 
 Here, in that statement Duration and VarByParam are the two attributes of the OutputCache directive
 
@@ -27,8 +30,10 @@ This is the most important attributes; you can't afford to miss that in the Outp
 
 ```
 **Fragment caching**
-In some scenarios we only need to cache only a segment of a page. For example a contact us page in a main page will be the same for all the users and for that there is no need to cache the entire page.
-
+- caching is required  to speed up the performance of the asp.net application here we will see how can retrive the single information from the cache 
+ and how to store any data in the cache
+ - whatever data whether its data set or any kind of information which you want to frequently you can simply store that in cache object and you can using 
+  start whenever you want
 ```C#
 <%@ OutputCache Duration = 10 VaryByParam = "None" %>  
 ```
