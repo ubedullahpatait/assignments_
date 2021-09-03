@@ -55,3 +55,30 @@ You can refresh the selected part of the web page by using UpdatePanel control, 
             </table>
         </div>
 ```
+**AsyncPostBackTrigger**
+
+Defines a control and optional event of the control as an asynchronous postback control trigger that causes an UpdatePanel control to refresh.
+```C#
+  <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="Button2" EventName="click" />
+                </Triggers>
+                
+````
+**UpdateMode**
+When an UpdatePanel control is not inside another UpdatePanel control, the panel is updated as determined by the settings of the UpdateMode and ChildrenAsTriggers properties, together with the collection of triggers
+
+```C#
+<asp:UpdatePanel ID="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <asp:Label ID="Label3" runat="server"></asp:Label><br />
+                      <asp:Button ID="Button3" runat="server" Text="submit" OnClick="Button1_Click" />
+                </ContentTemplate>
+            </asp:UpdatePanel><br />
+            
+            <asp:UpdatePanel ID="UpdatePanel3" runat="server" UpdateMode="Conditional">
+                  <ContentTemplate>
+                    <asp:Label ID="Label4" runat="server"></asp:Label><br />
+                      <asp:Button ID="Button4" runat="server" Text="submit" OnClick="Button1_Click" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+```
