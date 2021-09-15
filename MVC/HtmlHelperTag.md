@@ -123,3 +123,23 @@ Example
 } 
    ```   
       
+ **Strongly-Typed HTML Helper** 
+The Strongly-Typed HTML helper takes a lambda as a parameter that tells the helper, which element of the model to be utilized in the typed view. The Strongly typed views are used for rendering specific sorts of model objects, rather than using the overall View-Data structure. 
+
+- @Html.HiddenFor()
+- @Html.LabelFor()
+- @Html.TextBoxFor()
+- @Html.RadioButtonFor()
+- @Html.DropDownListFor()
+- @Html.CheckBoxFor()
+- @Html.TextAreaFor()
+- @Html.PasswordFor()
+- @Html.ListBoxFor()
+
+**Templated HTML Helper** 
+The templated HTML Helper is used for data display and input. It generates HTML automatically as per model property and it can generate HTML for a complete model with a single tag. These are divided into two categories 
+
+ 
+
+Display Template
+Editor Template
