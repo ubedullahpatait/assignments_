@@ -7,10 +7,7 @@ resolving dependencies across objects. <br>
 The dependency is an object (or a service object), which is passed as dependency to the consumer object (or a client application). <br>
 This is a pattern using which decoupling (or loose-coupling) across components can be implemented easily.
 
-- When ObjectA wants to access methods (or operations) of ObjectB, then instead of directly instantiating ObjectB in ObjectA,
- ObjectB is injected into ObjectA as a dependency. <br>
-In this case, ObjectB implements an interface, which is passed to ObjectA. Hence ObjectB is not instantiated using new in ObjectA. <br>
-The advantage of this approach is that if in future ObjectB has any modifications, ObjectA need not be refreshed.
+ - Unity is a dependency injection container that can be used for creating and injecting the dependency object using either constructor, method, or property injections.
 
 **problem**
 - Tightly Coupled
