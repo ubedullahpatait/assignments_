@@ -1,5 +1,5 @@
 # Binding in Angular
-data binding defines communication between component and DOM
+Data binding is a technique, where the data stays in sync between the component and the view. Whenever the user updates the data in the view, Angular updates the component. When the component gets new data, the Angular updates the view.
 
 **types of data binding in angular**
 - Interpolation.
